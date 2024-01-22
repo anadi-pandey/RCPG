@@ -1,0 +1,336 @@
+.game-container {
+  background-color: #191919;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.landing-banner {
+  width: 30%;
+  height: 30%;
+}
+
+.image-container {
+  margin-inline: auto;
+  text-align: center;
+  padding: 70px;
+}
+
+.typography {
+  font-family: "Satisfy", cursive;
+  font-family: "Work Sans", sans-serif;
+}
+
+.game-controls {
+  color: #ffdd95;
+  background-color: #ff9843;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  border: #ffdd95 2px dashed;
+  font-size: larger;
+}
+
+.game-controls:hover {
+  color: #ff9843 !important;
+  background-color: #ffdd95;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  border: #ff9843 2px dashed !important;
+  font-size: larger;
+}
+
+.avatars {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.avatar-container {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.selected-avatar-container {
+  box-shadow: #ff9843 0px 3px 4px 0px, #ff9843 0px 0px 0px 1px;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.avatar-collection {
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 60vh;
+  overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin-bottom: 10px;
+}
+
+.avatar-collection::-webkit-scrollbar {
+  width: 2px !important;
+}
+
+.form-button {
+  width: 300px;
+  margin: 5px 0;
+  background-color: #ff9843;
+  color: white;
+  font-weight: 600;
+}
+
+.form-button:hover {
+  background-color: white !important;
+  color: #ff9843 !important;
+  border-color: #ff9843 !important;
+}
+
+.drawer-container {
+  position: relative;
+  height: 100%;
+}
+
+.form-input {
+  margin: 5px 0;
+}
+
+.avatar-icon {
+  width: 40px;
+  height: 40px;
+}
+.avatar-console {
+  width: 100px;
+  height: 100px;
+}
+.avatar-icon-container {
+  border-radius: 50%;
+  padding: 4px;
+  margin: 10px;
+}
+
+.player-line-item {
+  display: flex;
+  align-items: center;
+  color: #ffdd95;
+  font-size: large;
+  border: solid #ffbb64 1px;
+  position: relative;
+  width: 250px;
+  border-radius: 10px;
+  margin: 10px auto;
+  background-color: #0f0f0f;
+  box-shadow: #ff9843 0px 0px 4px 0px, #ff9843 0px 0px 1px 0px;
+}
+.who-line-item {
+  display: flex;
+  align-items: center;
+  color: #ffdd95;
+  font-size: large;
+  border: solid #ffbb64 1px;
+  position: relative;
+  width: 350px;
+  border-radius: 10px;
+  margin: 10px auto;
+  background-color: #0f0f0f;
+  box-shadow: #ff9843 0px 0px 4px 0px, #ff9843 0px 0px 1px 0px;
+}
+
+.play-button {
+  background-color: #c1f2b0;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.players-lobby {
+  color: #ff9843;
+}
+
+.game-room-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+}
+
+.winner {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 4px 0;
+  border-radius: 5px;
+  background-color: #0f0f0f;
+  border: solid #ffbb64 1px;
+  box-shadow: #ff9843 0px 0px 4px 0px, #ff9843 0px 0px 1px 0px;
+  margin: 4px 0 20px 0;
+}
+
+.winner-name {
+  margin-left: 20px;
+}
+
+.game-console {
+  font-size: large;
+  border: solid #ffbb64 1px;
+  position: relative;
+  width: 550px;
+  height: 90%;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: #0f0f0f;
+  box-shadow: #ff9843 0px 0px 4px 0px, #ff9843 0px 0px 1px 0px;
+}
+
+.game-console {
+  display: flex;
+  height: 620px;
+  justify-content: space-around;
+}
+
+.player {
+  width: 48%;
+  margin: 5px;
+  background-color: #0f0f0f;
+}
+
+.player-name {
+  color: #ffdd95;
+}
+
+.player-avatar {
+  display: flex;
+  border: #ffdd95 solid 1px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  background-color: #0f0f0f;
+}
+
+.player-choice {
+  border: white solid 1px;
+  height: 72%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.game-key {
+  background-color: #0f0f0f;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.game-key > p {
+  margin: 0;
+  height: 98%;
+  width: 98%;
+  border: #ffdd95 solid 2px;
+  padding: 2px 4px;
+}
+
+.control-placeholder > img {
+  width: 40px;
+  display: block;
+}
+
+.control-placeholder {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 0;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 0;
+}
+
+.game-controls-console {
+  color: #ffdd95;
+  background-color: #504f4f;
+  padding: 5px 30px;
+  align-items: center;
+  font-weight: 700;
+  font-size: larger;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
+.response-image {
+  width: 50%;
+  object-fit: contain;
+  margin-bottom: 40px;
+  margin-inline: auto;
+}
+
+.responded {
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #c1f2b0;
+  text-transform: uppercase;
+}
+
+.score {
+  border: #ff9843 solid 2px;
+  border-radius: 5px;
+  background-color: #0f0f0f;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: larger;
+  font-weight: 800;
+  border: white 1px solid;
+  box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px,
+    rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;
+}
+
+.controller {
+  width: 50px;
+  margin-inline: 100px;
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+.players {
+  border-radius: 5px;
+  background-color: #191919;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(255, 255, 255, 0.16) 0px 2px 5px 0px,
+    rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;
+}
+
+.intial-response {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.response-image-container {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
